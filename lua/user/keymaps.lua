@@ -13,6 +13,8 @@ keymap("n", "<m-j>", "<C-w>j", opts)
 keymap("n", "<m-k>", "<C-w>k", opts)
 keymap("n", "<m-l>", "<C-w>l", opts)
 keymap("n", "<m-tab>", "<c-6>", opts)
+keymap("n", "<m-s-h>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
+keymap("n", "<m-s-l>", "<cmd>bnext<cr>", { desc = "Next buffer", noremap = true, silent = true})
 
 keymap("n", "n", "nzz", opts)
 keymap("n", "N", "Nzz", opts)
