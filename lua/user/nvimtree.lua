@@ -4,7 +4,6 @@ local M = {
 }
 
 function M.config()
-
   local wk = require "which-key"
   wk.register {
     ["<leader>e"] = { "<cmd>NvimTreeToggle<CR>", "Explorer" },
@@ -33,10 +32,12 @@ function M.config()
     hijack_netrw = false,
     sync_root_with_cwd = true,
     view = {
-      relativenumber = true,
+      width = 32,
+    },
+    filters = {
+      dotfiles = true,
     },
     renderer = {
-      add_trailing = false,
       group_empty = false,
       highlight_git = false,
       full_name = false,

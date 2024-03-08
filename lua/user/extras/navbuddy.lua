@@ -1,6 +1,7 @@
 local M = {
   "SmiteshP/nvim-navbuddy",
-  dependencies = {
+  cmd = "Navbuddy",
+  ependencies = {
     "SmiteshP/nvim-navic",
     "MunifTanjim/nui.nvim",
   },

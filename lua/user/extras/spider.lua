@@ -1,5 +1,6 @@
 local M = {
   "chrisgrieser/nvim-spider",
+  event = "VeryLazy",
 }
 
 function M.config()

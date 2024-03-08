@@ -1,12 +1,15 @@
 local M = {
   "numToStr/Comment.nvim",
-  lazy = false,
   dependencies = {
-
     {
       "JoosepAlviste/nvim-ts-context-commentstring",
       event = "VeryLazy",
     },
+  },
+  keys = {
+    { "<leader>/", mode = { "n", "v" }, desc = "Comment" },
+    { "gcc", mode = "n", desc = "Comment" },
+    { "gbc", mode = "n", desc = "Comment" },
   },
 }
 

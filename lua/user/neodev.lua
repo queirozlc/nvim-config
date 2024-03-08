@@ -1,5 +1,6 @@
 local M = {
   "folke/neodev.nvim",
+  event = { "BufReadPre", "BufNewFile" },
 }
 
 function M.config()

@@ -10,6 +10,7 @@ local M = {
     "nvim-neotest/neotest-plenary",
     "rcasia/neotest-bash",
     "nvim-neotest/neotest-jest",
+    "jfpedroza/neotest-elixir"
   },
 }
 
@@ -29,6 +30,7 @@ function M.config()
   require("neotest").setup {
     adapters = {
       require "neotest-vitest",
+      require "neotest-elixir",
       require "neotest-vim-test" {
         ignore_file_types = { "python", "vim", "lua", "javascript", "typescript" },
       },

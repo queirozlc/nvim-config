@@ -1,5 +1,6 @@
 local M = {
   "vuki656/package-info.nvim",
+  event = "VeryLazy",
 }
 
 function M.config()

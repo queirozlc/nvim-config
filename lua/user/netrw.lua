@@ -1,7 +1,6 @@
 local M = {
   "prichrd/netrw.nvim",
-  lazy = false,
-  -- event = "VeryLazy",
+  event = "VeryLazy",
 }
 
 function M.config()

@@ -1,5 +1,6 @@
-local M = {
+--[[ local M = {
   "eandrju/cellular-automaton.nvim",
+  event =  "Bufc"
 }
 
 function M.config()
@@ -9,4 +10,4 @@ function M.config()
   }
 end
 
-return M
+return M ]]

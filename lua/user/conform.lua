@@ -29,7 +29,8 @@ for _, filetype in pairs(prettier_ft) do
 end
 
 local M = {
-  'stevearc/conform.nvim'
+  'stevearc/conform.nvim',
+  event = "InsertEnter"
 }
 
 M.opts = {

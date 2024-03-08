@@ -1,7 +1,19 @@
 local M = {
   "nvim-telescope/telescope.nvim",
-  dependencies = { { "nvim-telescope/telescope-fzf-native.nvim", build = "make", lazy = true } },
-  lazy = true,
+  dependencies = {
+    {
+      "nvim-telescope/telescope-fzf-native.nvim",
+      build = "make",
+      lazy = true,
+    },
+    {
+      "andrew-george/telescope-themes",
+      config = function()
+        require("telescope").load_extension "themes"
+      end,
+    },
+  },
+  -- lazy = true,
   cmd = "Telescope",
 }
 
@@ -85,7 +97,7 @@ function M.config()
         "--line-number",
         "--column",
         "--smart-case",
-        -- "--hidden",
+        "--hidden",
         "--glob=!.git/",
       },
 

@@ -1,5 +1,6 @@
 local M = {
   "folke/trouble.nvim",
+  cmd = { "Trouble", "TodoTrouble" },
 }
 
 function M.config()

@@ -1,5 +1,6 @@
 local M = {
   "rmagatti/auto-session",
+  event = "BufWinEnter",
 }
 
 function M.config()

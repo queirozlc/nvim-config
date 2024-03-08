@@ -100,9 +100,9 @@ function M.config()
     "yamlls",
     "marksman",
     "tailwindcss",
+    "docker_compose_language_service",
     "elixirls",
     "eslint",
-    -- "rust_analyzer",
   }
 
   local default_diagnostic_config = {

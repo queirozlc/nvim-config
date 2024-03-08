@@ -1,12 +1,17 @@
 local M = {
   "mfussenegger/nvim-dap",
-  event = "VeryLazy",
   dependencies = {
     {
       "rcarriga/nvim-dap-ui",
-      "mfussenegger/nvim-dap-python",
       "theHamsta/nvim-dap-virtual-text",
       "nvim-telescope/telescope-dap.nvim",
+    },
+  },
+  keys = {
+    {
+      "<leader>dt",
+      "<cmd>lua require'dap'.toggle_breakpoint()<cr>",
+      { noremap = true, silent = true },
     },
   },
 }
